@@ -1,11 +1,13 @@
-body{
-    background: #000;
-    color: #FFF;
+/* Estilos Gerais */
+body {
+    background: #121212;
+    color: #fff;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
-.conteudo{
+
+.container {
     margin: 0 auto;
     width: 100%;
     max-width: 450px;
@@ -13,57 +15,80 @@ body{
     margin-bottom: 50px;
     background: #2b2a2a;
     border-radius: 12px;
+    padding: 20px;
 }
-.topo{
+
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
-.topo input{
-    width: 350px;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #191818;
+
+.header input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #191818;
+    color: #fff;
+    font-size: 1rem;
     outline: none;
-    font-size: 1.2rem;
-    background: #191818;
-    color: #FFF;
 }
-.topo button{
+
+.header button {
     width: 45px;
+    height: 45px;
     border-radius: 12px;
-    border: 1px solid #191818;
-    background: #191818;
-    color: #FFF;
-    outline: none;
-}
-.topo button{
-    background: #191818;
+    background-color: #191818;
+    color: #fff;
+    border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#listTarefas{
+
+.header button:hover {
+    background-color: #333;
+}
+
+/* Lista de Tarefas */
+#taskList {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-#listaTarefas li{
-    padding: 20px;
+
+#taskList li {
+    padding: 15px;
     background-color: #191818;
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
-.btnAcao{
-    border-radius: 20px;
-    border: 1px solid #191818;
-    width: 38px;
-    height: 38px;
-    margin-right: 8px;
+
+/* Texto da Tarefa */
+.taskText {
+    flex: 1;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Botões de Ação */
+.actionButton {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 12px;
+    background-color: #191818;
+    color: #fff;
+    border: none;
     cursor: pointer;
-    background: #191818;
-    color: #FFF;
 }
-.btnAcao:hover{
-    background: #3c3a3a;
+
+.actionButton:hover {
+    background-color: #3c3a3a;
 }
