@@ -1,4 +1,3 @@
-/* Estilos Gerais */
 body {
     background: #121212;
     color: #fff;
@@ -18,14 +17,13 @@ body {
     padding: 20px;
 }
 
-/* Header */
-.header {
+.topo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.header input {
+.topo input {
     width: 80%;
     padding: 12px;
     border-radius: 10px;
@@ -36,7 +34,7 @@ body {
     outline: none;
 }
 
-.header button {
+.topo button {
     width: 45px;
     height: 45px;
     border-radius: 12px;
@@ -49,18 +47,17 @@ body {
     align-items: center;
 }
 
-.header button:hover {
+.topo button:hover {
     background-color: #333;
 }
 
-/* Lista de Tarefas */
-#taskList {
+#listaTarefas {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-#taskList li {
+#listaTarefas li {
     padding: 15px;
     background-color: #191818;
     border-radius: 12px;
@@ -70,15 +67,13 @@ body {
     margin-bottom: 15px;
 }
 
-/* Texto da Tarefa */
-.taskText {
+.textoTarefa {
     flex: 1;
     font-size: 1rem;
     color: #fff;
 }
 
-/* Botões de Ação */
-.actionButton {
+.btnAcao {
     width: 35px;
     height: 35px;
     margin-left: 10px;
@@ -89,6 +84,6 @@ body {
     cursor: pointer;
 }
 
-.actionButton:hover {
+.btnAcao:hover {
     background-color: #3c3a3a;
 }
